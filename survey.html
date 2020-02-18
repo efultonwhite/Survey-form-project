@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>General Survey</title>
+</head>
+
+<body>
+<header>
+    <h1 id="title">General Survey</h1>
+    <p id="description">Because I really don't want to create a real one</p>
+  </header>
+<form id="survey-form">
+  <div class="form-group">
+    <div class="">
+
+    </div>
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" placeholder="Enter your name" required />
+
+    <label for="email">
+      Email
+    </label>
+    <input type="email" name="email" id="email" placeholder="Enter your email" required />
+
+    <label for="number">Age</label>
+    <input type="number" name="age" id="number" min="0" max="120" placeholder="Age" required />
+  </div>
+  <div class="form-group">
+    <p>What gender do you identify as?</p>
+    <label id="gender">
+      <input type="radio" name="gender" value="male" />Male</label>
+    <label>
+      <input type="radio" name="gender" value="female">Female
+    </label>
+    <label>
+      <input type="radio" name="gender" value="other" checked>Other</label>
+
+    <label>
+      <input type="radio" name="gender" value="no-answer" checked>Prefer not to answer.
+    </label>
+  </div>
+  <div class="form-group">
+    <p>Please specify your ethnicity <span>(Check all that apply)</span>
+    </p>
+    <label>
+      <input
+      type="checkbox" name="ethnicity" value="caucasian"
+      >Caucasian
+    </label>
+    <br>
+
+    <label>
+      <input type="checkbox" name="ethnicity" value="African-American"
+      >African-American
+    </label>
+    <br>
+    <label>
+      <input type="checkbox" name="ethnicity" value="Latino or Hispanic">Latino or Hispanic
+    </label>
+    <br>
+    <label>
+      <input type="checkbox" name="ethnicity" value="asian">Asian
+    </label>
+    <br>
+
+      <label>
+        <input type="checkbox" name="ethnicity" value="checkbox" >
+        Checkbox</label>
+      <br>
+      <label>
+        <input type="checkbox" name="ethnicity" value="checkbox"
+        Checkbox></label>
+    <br>
+      <label>
+        <input type="checkbox" name="ethnicity" value="checkbox">
+        Native American</label>
+      <br>
+      <label>
+        <input type="checkbox" name="ethnicity" value="checkbox"
+        Native Hawaiian or Pacific Islander</label>
+      <br>
+      <label>
+        <input type="checkbox" name="ethnicity_2" value="checkbox" id="ethnicity_4">
+        Other/Unknown</label>
+      <br>
+      <label>
+        <input type="checkbox" name="ethnicity_2" value="checkbox" id="ethnicity_5">
+        Prefer not to say.</label>
+</div>
+<div class="form-group">
+  <p>What is the highes degree or level of education you have completed?</p>
+	<select id="education" name="education" required>
+	<option disabled selected value>Select an option</option>
+		<option value="someHighSchool">Some High School</option>
+    <option value=""></option>
+
+	</select>
+	</div>
+
+
+  </form>
+</body>
+
+</html>
+
+
+
+
+<!-- Dropdown menu  -->
+
+
+
+High School
+Some College
+Bachelor's Degree
+Master's Degree
+Ph.D. or Higher
+Trade School
+Prefer not to say.
+<!-- type  radio-->
+Are you married?
+
+Yes
+No
+I'd prefer not to say.
+<!-- Type textarea with button -->
+Any questions or concerns?
+Enter comments here...
+Submit button
