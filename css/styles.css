@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Exo+2|Fjalla+One|Hind+Madurai&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic|PT+Sans+Narrow|Quicksand&display=swap');
+
+
+body {
+  background: #beebe9;
+  color: #413c69;
+  margin: 0px;
+}
+
+.container {
+  background: #fffdf9;
+  padding: 75px;
+
+
+  margin: 70px;
+  border-radius: 10px;
+
+
+}
+
+.header {
+  background: #ffe3ed;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  font-family: 'Anton', sans-serif;
+  font-size: 35px;
+  font-weight: normal;
+}
+
+label {
+  display: flex;
+  align-items: flex-start;
+
+}
+
+.answer {
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.form-group {
+  display: grid;
+  grid-gap: 10px;
+  font-family: 'Fjalla One', sans-serif;
+  margin: 25px;
+  font-size: 25px;
+  border: solid #413c69 2px;
+  border-radius: 10px;
+  padding: 30px;
+  padding-bottom: 60px;
+  box-shadow: 0px 6px 16px 7px rgba(217,213,213,0.67);
+-webkit-box-shadow: 0px 6px 16px 7px rgba(217,213,213,0.67);
+-moz-box-shadow: 0px 6px 16px 7px rgba(217,213,213,0.67);
+}
+
+#submit {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+#name, #email, #number {
+  border: none;
+  border-bottom: 2px solid #8ac6d1;
+font-size: 20px;
+  height: 50px;
+  background: #fffdf9;
+  outline: none;
+  width: 29%;
+  transition: width .4s;
+  transition-timing-function: ease-in-out;
+}
+
+
+
+#name:focus, #email:focus {
+  width: 100%;
+}
+
+
+
+textarea {
+  border: none;
+  background: #fffdf9;
+  width: 100%;
+  resize: none;
+  outline: none;
+  font-size: 20px;
+}
+
+.button {
+  margin-top: 150px;
+}
+
+button {
+  border: none;
+  background-color: #8ac6d1;
+  padding: 15px;
+  width: 100%;
+  font-size: 35px;
+  color: white;
+}
+
+
+
+/* CSS for select menu .dropdown */
+
+/* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: #fffdf9;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 24px;
+  right: 20px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #413c69 transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #413c69 transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #413c69;
+  padding: 8px 16px;
+
+  border-color: #413c69;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: #fffdf9;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}

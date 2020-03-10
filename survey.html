@@ -4,128 +4,303 @@
 <head>
   <meta charset="utf-8">
   <title>General Survey</title>
+  <script src="  https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js " type="text/javascript"></script>
+  <link rel="stylesheet" href="css/styles.css">
+
+  <link rel="stylesheet" href="checkbox.css">
 </head>
 
 <body>
-<header>
+
+  <header class="header">
     <h1 id="title">General Survey</h1>
     <p id="description">Because I really don't want to create a real one</p>
   </header>
-<form id="survey-form">
-  <div class="form-group">
-    <div class="">
 
-    </div>
-    <label for="name">Name</label>
-    <input type="text" name="name" id="name" placeholder="Enter your name" required />
 
-    <label for="email">
-      Email
-    </label>
-    <input type="email" name="email" id="email" placeholder="Enter your email" required />
+  <div class="container">
 
-    <label for="number">Age</label>
-    <input type="number" name="age" id="number" min="0" max="120" placeholder="Age" required />
+
+    <form id="survey-form">
+
+
+      <div class="form-group">
+
+        <label id="name-label" for="name">Name</label>
+        <input class="answer" type="text" name="name" id="name" placeholder="Enter your name" required />
+
+      </div>
+
+
+      <div class="form-group">
+
+        <label id="email-label" for="email">
+          Email
+        </label>
+        <input class="answer" type="email" name="email" id="email" placeholder="Enter your email" required />
+
+      </div>
+
+
+      <div class="form-group">
+
+        <label id="number-label" for="number">Age</label>
+        <input class="answer" type="number" name="age" id="number" min="1" max="120" placeholder="Age" />
+
+      </div>
+
+
+      <div class="form-group">
+
+        <p>What gender do you identify as?</p>
+
+        <div class="pretty p-default p-curve">
+          <input value="male" type="radio" name="gender" checked />
+          <div class="state p-primary-o">
+            <label class="answer" for="gender">Male</label>
+          </div>
+        </div>
+
+        <div class="pretty p-default p-curve">
+          <input value="female" type="radio" name="gender" checked />
+          <div class="state p-primary-o">
+            <label class="answer"for="gender">Female</label>
+          </div>
+        </div>
+
+        <div class="pretty p-default p-curve">
+          <input value="other" type="radio" name="gender" checked />
+          <div class="state p-primary-o">
+            <label class="answer" for="gender">Other</label>
+          </div>
+        </div>
+
+        <div class="pretty p-default p-curve">
+          <input value="no-answer" type="radio" name="gender" checked />
+          <div class="state p-primary-o">
+            <label class="answer" for="gender">Prefer not to answer.</label>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="form-group">
+        <p>Please specify your ethnicity (Check all that apply)</p>
+
+        <div class="pretty p-default p-curve">
+          <input type="checkbox" name="ethnicity" value="caucasian" />
+          <div class="state p-primary-o">
+            <label class="answer">Caucasian</label>
+          </div>
+        </div>
+
+        <div class="pretty p-default p-curve">
+          <input type="checkbox" name="ethnicity" value="african-american" />
+          <div class="state p-primary-o">
+            <label class="answer">African-American</label>
+          </div>
+        </div>
+
+        <div class="pretty p-default p-curve">
+          <input type="checkbox" name="ethnicity" value="latino-hispanic" />
+          <div class="state p-primary-o">
+            <label class="answer">Latino or Hispanic</label>
+          </div>
+        </div>
+
+        <div class="pretty p-default p-curve">
+          <input type="checkbox" name="ethnicity" value="asian" />
+          <div class="state p-primary-o">
+            <label class="answer">Asian</label>
+          </div>
+        </div>
+
+        <div class="pretty p-default p-curve">
+          <input type="checkbox" name="ethnicity" value="native-american" />
+          <div class="state p-primary-o">
+            <label class="answer">Native American</label>
+          </div>
+        </div>
+
+        <div class="pretty p-default p-curve">
+          <input type="checkbox" name="ethnicity" value="pacific-islander" />
+          <div class="state p-primary-o">
+            <label class="answer">Pacific Islander</label>
+          </div>
+        </div>
+
+        <div class="pretty p-default p-curve">
+          <input type="checkbox" name="ethnicity" value="other-unknown" />
+          <div class="state p-primary-o">
+            <label class="answer">Other/Unknown</label>
+          </div>
+        </div>
+
+        <div class="pretty p-default p-curve">
+          <input type="checkbox" name="ethnicity" value="no-answer" />
+          <div class="state p-primary-o">
+            <label class="answer">Prefer not to answer.</label>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="form-group">
+
+        <p>What is the highest degree or level of education you have completed?</p>
+
+        <div class="custom-select">
+          <select id="dropdown" name="education" required>
+
+            <option disabled selected value>Please select an option</option>
+            <option value="some-high-school">Some High School</option>
+            <option value="high-school">High School</option>
+            <option value="some-college">Some College</option>
+            <option value="bachelors-degree">Bachelor's Degree</option>
+            <option value="masters-degree">Master's Degree</option>
+            <option value="phd-or-higher">Ph.D. or Higher</option>
+            <option value="trade-school">Trade School</option>
+            <option value="prefer-not-to-say.">Prefer not to say.</option>
+
+          </select>
+        </div>
+
+
+
+      </div>
+
+
+      <div class="form-group">
+
+        <p>Are you married?</p>
+
+        <div class="pretty p-default p-curve">
+          <input value="yes" type="radio" name="marital-status" checked />
+          <div class="state p-primary-o">
+            <label class="answer">Yes</label>
+          </div>
+        </div>
+
+        <div class="pretty p-default p-curve">
+          <input value="No" type="radio" name="marital-status" checked />
+          <div class="state p-primary-o">
+            <label class="answer">No</label>
+          </div>
+        </div>
+
+        <div class="pretty p-default p-curve">
+          <input value="no-answer" type="radio" name="marital-status" checked />
+          <div class="state p-primary-o">
+            <label class="answer">Prefer not to answer.</label>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="form-group">
+
+        <p>Any questions or concerns?</p>
+
+        <textarea class="answer" id="comments" name="comment" rows="8" cols="80" placeholder="Write comments here..."></textarea>
+
+      </div>
+
+
+      <div class="button">
+
+        <button id="submit" type="submit">Submit!</button>
+
+      </div>
+
+
+    </form>
+
+
   </div>
-  <div class="form-group">
-    <p>What gender do you identify as?</p>
-    <label id="gender">
-      <input type="radio" name="gender" value="male" />Male</label>
-    <label>
-      <input type="radio" name="gender" value="female">Female
-    </label>
-    <label>
-      <input type="radio" name="gender" value="other" checked>Other</label>
 
-    <label>
-      <input type="radio" name="gender" value="no-answer" checked>Prefer not to answer.
-    </label>
-  </div>
-  <div class="form-group">
-    <p>Please specify your ethnicity <span>(Check all that apply)</span>
-    </p>
-    <label>
-      <input
-      type="checkbox" name="ethnicity" value="caucasian"
-      >Caucasian
-    </label>
-    <br>
+  <!-- Javascript for .dropdown select menu -->
 
-    <label>
-      <input type="checkbox" name="ethnicity" value="African-American"
-      >African-American
-    </label>
-    <br>
-    <label>
-      <input type="checkbox" name="ethnicity" value="Latino or Hispanic">Latino or Hispanic
-    </label>
-    <br>
-    <label>
-      <input type="checkbox" name="ethnicity" value="asian">Asian
-    </label>
-    <br>
+  <script type="text/javascript">
+    var x, i, j, selElmnt, a, b, c;
+    /* Look for any elements with the class "custom-select": */
+    x = document.getElementsByClassName("custom-select");
+    for (i = 0; i < x.length; i++) {
+      selElmnt = x[i].getElementsByTagName("select")[0];
+      /* For each element, create a new DIV that will act as the selected item: */
+      a = document.createElement("DIV");
+      a.setAttribute("class", "select-selected");
+      a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+      x[i].appendChild(a);
+      /* For each element, create a new DIV that will contain the option list: */
+      b = document.createElement("DIV");
+      b.setAttribute("class", "select-items select-hide");
+      for (j = 1; j < selElmnt.length; j++) {
+        /* For each option in the original select element,
+        create a new DIV that will act as an option item: */
+        c = document.createElement("DIV");
+        c.innerHTML = selElmnt.options[j].innerHTML;
+        c.addEventListener("click", function(e) {
+          /* When an item is clicked, update the original select box,
+          and the selected item: */
+          var y, i, k, s, h;
+          s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+          h = this.parentNode.previousSibling;
+          for (i = 0; i < s.length; i++) {
+            if (s.options[i].innerHTML == this.innerHTML) {
+              s.selectedIndex = i;
+              h.innerHTML = this.innerHTML;
+              y = this.parentNode.getElementsByClassName("same-as-selected");
+              for (k = 0; k < y.length; k++) {
+                y[k].removeAttribute("class");
+              }
+              this.setAttribute("class", "same-as-selected");
+              break;
+            }
+          }
+          h.click();
+        });
+        b.appendChild(c);
+      }
+      x[i].appendChild(b);
+      a.addEventListener("click", function(e) {
+        /* When the select box is clicked, close any other select boxes,
+        and open/close the current select box: */
+        e.stopPropagation();
+        closeAllSelect(this);
+        this.nextSibling.classList.toggle("select-hide");
+        this.classList.toggle("select-arrow-active");
+      });
+    }
 
-      <label>
-        <input type="checkbox" name="ethnicity" value="checkbox" >
-        Checkbox</label>
-      <br>
-      <label>
-        <input type="checkbox" name="ethnicity" value="checkbox"
-        Checkbox></label>
-    <br>
-      <label>
-        <input type="checkbox" name="ethnicity" value="checkbox">
-        Native American</label>
-      <br>
-      <label>
-        <input type="checkbox" name="ethnicity" value="checkbox"
-        Native Hawaiian or Pacific Islander</label>
-      <br>
-      <label>
-        <input type="checkbox" name="ethnicity_2" value="checkbox" id="ethnicity_4">
-        Other/Unknown</label>
-      <br>
-      <label>
-        <input type="checkbox" name="ethnicity_2" value="checkbox" id="ethnicity_5">
-        Prefer not to say.</label>
-</div>
-<div class="form-group">
-  <p>What is the highes degree or level of education you have completed?</p>
-	<select id="education" name="education" required>
-	<option disabled selected value>Select an option</option>
-		<option value="someHighSchool">Some High School</option>
-    <option value=""></option>
+    function closeAllSelect(elmnt) {
+      /* A function that will close all select boxes in the document,
+      except the current select box: */
+      var x, y, i, arrNo = [];
+      x = document.getElementsByClassName("select-items");
+      y = document.getElementsByClassName("select-selected");
+      for (i = 0; i < y.length; i++) {
+        if (elmnt == y[i]) {
+          arrNo.push(i)
+        } else {
+          y[i].classList.remove("select-arrow-active");
+        }
+      }
+      for (i = 0; i < x.length; i++) {
+        if (arrNo.indexOf(i)) {
+          x[i].classList.add("select-hide");
+        }
+      }
+    }
 
-	</select>
-	</div>
+    /* If the user clicks anywhere outside the select box,
+    then close all select boxes: */
+    document.addEventListener("click", closeAllSelect);
+  </script>
 
-
-  </form>
 </body>
 
+
 </html>
-
-
-
-
-<!-- Dropdown menu  -->
-
-
-
-High School
-Some College
-Bachelor's Degree
-Master's Degree
-Ph.D. or Higher
-Trade School
-Prefer not to say.
-<!-- type  radio-->
-Are you married?
-
-Yes
-No
-I'd prefer not to say.
-<!-- Type textarea with button -->
-Any questions or concerns?
-Enter comments here...
-Submit button
